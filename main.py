@@ -148,12 +148,9 @@ class JeuDeCartes :
               self.__paquetj1.pop(0)
               self.__tapis.append(self.__paquetj2[0])
               self.__paquetj2.pop(0)
-              #print(self.__tapis)
-          elif len(self.__paquetj1)<3:
-          #if len(self.__paquetj1)==0:  
+          elif len(self.__paquetj1)<3: 
             return (print("Bataille impossible "+self.__nomj1, "n'a pas assez de cartes, "+self.__nomj2," remporte la partie"))
           elif len(self.__paquetj2)<3:
-          #elif len(self.__paquetj2)==0:
             return print("Bataille impossible "+self.__nomj2, "n'a pas assez de cartes, "+self.__nomj1," remporte la partie")
 
 Jeu =JeuDeCartes(32,1,"player_1","player_2")
